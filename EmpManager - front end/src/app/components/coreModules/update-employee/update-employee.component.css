@@ -1,0 +1,70 @@
+.page-title {
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #f0f8ff;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fetch-employee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative; /* Ensures the button is positioned relative to this container */
+}
+
+.input-label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.input-field {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.fetch-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fetch-button:hover {
+    background-color: #0056b3;
+}
+
+.close-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -60px; /* Adjust based on the height of the container and button */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.close-button:hover {
+    background-color: darkred;
+}

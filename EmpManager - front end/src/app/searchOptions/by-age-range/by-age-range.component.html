@@ -1,0 +1,11 @@
+<h2 class="page-title">Fetch Employees by Age</h2>
+<div class="fetch-employee-container">
+    <label for="startAge" class="input-label">Enter Starting Age:</label>
+    <input id="startAge" [(ngModel)]="startAge" type="number" class="input-field">
+    
+    <label for="endAge" class="input-label">Enter Ending Age:</label>
+    <input id="endAge" [(ngModel)]="endAge" type="number" class="input-field">
+    
+    <button (click)="fetchEmployeesByAgeRange()" class="fetch-button">Fetch Employees</button>
+    <a routerLink="/" class="close-button">Close</a>
+</div>

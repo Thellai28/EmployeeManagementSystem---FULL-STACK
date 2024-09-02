@@ -1,0 +1,11 @@
+<h2 class="page-title">Fetch Employees by Salary</h2>
+<div class="fetch-employee-container">
+    <label for="startSalary" class="input-label">Enter Starting Salary:</label>
+    <input id="startSalary" [(ngModel)]="startSalary" type="number" class="input-field">
+    
+    <label for="endSalary" class="input-label">Enter Ending Salary:</label>
+    <input id="endSalary" [(ngModel)]="endSalary" type="number" class="input-field">
+    
+    <button (click)="fetchEmployeesBySalaryRange()" class="fetch-button">Fetch Employees</button>
+    <a routerLink="/" class="close-button">Close</a>
+</div>

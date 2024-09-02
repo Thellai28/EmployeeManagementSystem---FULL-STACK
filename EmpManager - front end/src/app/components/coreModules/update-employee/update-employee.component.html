@@ -1,0 +1,7 @@
+<h2 class="page-title">Update Employee</h2>
+<div class="fetch-employee-container">
+    <label for="employeeId" class="input-label">Enter Employee ID:</label>
+    <input id="employeeId" [(ngModel)]="employeeId" type="number" class="input-field">
+    <button (click)="fetchEmployee()" class="fetch-button">Fetch Employee</button>
+    <a routerLink="/" class="close-button">Close</a>
+</div>

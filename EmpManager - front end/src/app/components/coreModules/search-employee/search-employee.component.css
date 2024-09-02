@@ -1,0 +1,81 @@
+.page-title {
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #f0f8ff;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 750px; /* Adjust the maximum width to accommodate three buttons per line */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    flex-basis: calc(33.333% - 20px); /* Adjusted to ensure three buttons per line with gaps */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    min-width: 150px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Close button styling */
+.close-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 20px; /* Add margin to separate from other content */
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: darkred;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    .button-container {
+        max-width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    a {
+        flex-basis: auto;
+        width: 100%;
+    }
+}
+

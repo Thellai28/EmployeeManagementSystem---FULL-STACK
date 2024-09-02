@@ -1,0 +1,50 @@
+<div *ngIf="isSuccess" class="message-container">
+  <div class="success-message">{{ successMessage }}</div>
+</div>
+
+<div *ngIf="isError" class="message-container">
+  <div class="error-message">{{ errorMessage }}</div>
+</div>
+
+<form (ngSubmit)="onSubmit()">
+  <h2>Personal Information</h2>
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" [(ngModel)]="employee.name" name="name" required>
+  </div>
+  <div>
+    <label for="age">Age:</label>
+    <input id="age" type="number" [(ngModel)]="employee.age" name="age" required>
+  </div>
+  <div>
+    <label for="contactNumber">Contact Number:</label>
+    <input id="contactNumber" [(ngModel)]="employee.contactNumber" name="contactNumber" required>
+  </div>
+  <div>
+    <label for="personalEmailId">Personal Email ID:</label>
+    <input id="personalEmailId" type="email" [(ngModel)]="employee.personalEmailId" name="personalEmailId" required>
+  </div>
+  <h2>Professional Information</h2>
+  <div>
+    <label for="designation">Designation:</label>
+    <input id="designation" [(ngModel)]="employee.designation" name="designation" required>
+  </div>
+  <div>
+    <label for="dateOfJoining">Date of Joining:</label>
+    <input id="dateOfJoining" type="date" [(ngModel)]="employee.dateOfJoining" name="dateOfJoining" required>
+  </div>
+  <div>
+    <label for="reportingTo">Reporting To:</label>
+    <input id="reportingTo" type="number" [(ngModel)]="employee.reportingTo" name="reportingTo" required>
+  </div>
+  <div>
+    <label for="department">Department:</label>
+    <input id="department" [(ngModel)]="employee.department" name="department" required>
+  </div>
+  <div>
+    <label for="salary">Salary:</label>
+    <input id="salary" type="number" [(ngModel)]="employee.salary" name="salary" required>
+  </div>
+  <button type="submit">Submit</button>
+  <a routerLink="/" class="close-button">Close</a>
+</form>

@@ -1,0 +1,15 @@
+.page-title {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #f0f8ff;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 
+
+

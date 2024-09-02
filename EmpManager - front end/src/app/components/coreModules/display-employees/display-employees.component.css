@@ -1,0 +1,112 @@
+/* .employee-table-container {
+  padding: 20px;
+  padding-bottom: 100px;
+  max-width: 100%;
+  overflow-x: auto;
+  position: relative;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+  background-color: #e9e9e9;
+}
+
+.close-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.close-button:hover {
+  background-color: darkred;
+} */
+
+
+.employee-table-container {
+  padding: 20px;
+  padding-bottom: 100px; /* Increased bottom padding for space for the button */
+  max-width: 100%;
+  overflow-x: auto;
+  position: relative; /* Ensures the button is positioned relative to this container */
+  background-color: #e6f7ff; /* Light blue background for the container */
+  border-radius: 8px; /* Optional: add a border-radius for rounded corners */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff; /* Distinct background color */
+  color: white; /* White text for better contrast */
+  font-weight: bold; /* Bold text */
+  padding: 12px; /* Increased padding for better spacing */
+  border-radius: 5px; /* Slightly rounded corners for visual appeal */
+  text-transform: uppercase; /* Uppercase text for a more defined look */
+}
+
+td {
+  background-color: #f9f9f9; /* Light grey background for table rows */
+}
+
+tr:nth-child(even) td {
+  background-color: #e9e9e9; /* Alternate row colors for better readability */
+}
+
+.close-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
+}
+
+.close-button:hover {
+  background-color: darkred;
+}

@@ -1,0 +1,10 @@
+<h2 class="page-title">Fetch Employees by Designation</h2>
+<div class="fetch-employee-container">
+    <label for="employeeDesignation" class="input-label">Select Designation:</label>
+    <select id="employeeDesignation" [(ngModel)]="selectedDesignation" class="input-field">
+        <option *ngFor="let designation of designations" [value]="designation">
+            {{ designation }}
+        </option>
+    </select>
+    <button (click)="fetchEmployees()" class="fetch-button">Fetch Employees</button>
+</div>

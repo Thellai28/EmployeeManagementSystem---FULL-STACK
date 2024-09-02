@@ -1,0 +1,6 @@
+<h2 class="page-title">Fetch Employees by Age</h2>
+<div class="fetch-employee-container">
+    <label for="employeeAge" class="input-label">Enter Age:</label>
+    <input id="employeeAge" [(ngModel)]="age" type="number" class="input-field">
+    <button (click)="fetchEmployees()" class="fetch-button">Fetch Employees</button>
+</div>

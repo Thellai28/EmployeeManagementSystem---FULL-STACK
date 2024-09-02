@@ -1,0 +1,10 @@
+<h2 class="page-title">Fetch Employees by Date of Joining</h2>
+<div class="fetch-employee-container">
+    <label for="startDate" class="input-label">Start Date:</label>
+    <input id="startDate" [(ngModel)]="startDate" type="date" class="input-field">
+    
+    <label for="endDate" class="input-label">End Date:</label>
+    <input id="endDate" [(ngModel)]="endDate" type="date" class="input-field">
+    
+    <button (click)="fetchEmployees()" class="fetch-button">Fetch Employees</button>
+</div>
